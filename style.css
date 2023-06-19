@@ -350,14 +350,18 @@ body {
     font-size: 10px;
 }
 
+.icone {
+    width: 24px;
+}
+
 .rede-nome {
     font-size: 14px;
+
 }
 
 .endereco-descricao {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 12px;
+    text-align: center;
 }
 
 .endereco-nome {
@@ -366,6 +370,7 @@ body {
 
 .endereco {
     width: 80vw;
+    text-align: center;
 }
 
 .prato {
