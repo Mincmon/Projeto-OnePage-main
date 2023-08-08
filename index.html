@@ -8,19 +8,23 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Imagens/icone.svg">
+    <script src="https://kit.fontawesome.com/c147d2766a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Ctr + ; = comentário -->
     <!-- INICIO CABEÇALHO -->
     <header id="header">
-        <nav class="menu container">
-            <img src="Imagens/logo.png" alt="" class="logo">
+        <img src="Imagens/logo.png" alt="" class="logo">
+        <nav id="nav-header" class="menu container">
             <a href="#header" class="item">HOME</a>
             <a href="#nossaComida" class="item">NOSSA COMIDA</a>
             <a href="#nossaEquipe" class="item">NOSSA EQUIPE</a>
             <a href="#cardapio" class="item">NOSSO CARDÁPIO</a>
             <a href="#contato" class="item">CONTATO</a>
         </nav>
+        <a class="menu-barras" onclick="mostrarMenu ()">
+            <i id="zip" class="fas fa-bars"></i>
+        </a>
     </header>
     <!-- FIM CABEÇALHO -->
     <!-- DIVISÃO -->
@@ -132,5 +136,22 @@
     </section>
 </footer>
 <!-- FIM RODAPÉ -->
+<script>
+    function mostrarMenu () {
+    var menu= document.getElementById("nav-header");
+    var icone= document.getElementById("zip");
+
+    if (getComputedStyle(menu).display == 'none') {
+        menu.style.display="flex";
+        icone.classList.remove("fa-bars");
+        icone.classList.add("fa-times");
+        }
+    else {
+        menu.style.display="none";
+        icone.classList.remove("fa-times");
+        icone.classList.add("fa-bars");
+        }
+    }
+</script>
 </body>
 </html>

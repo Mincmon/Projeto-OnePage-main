@@ -278,6 +278,23 @@ html {
 }
 }
 
+.menu-barras {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:401px) and (max-width:768px) {
 
 body {
@@ -319,11 +336,37 @@ body {
     flex-wrap: wrap;
 }
 
-
+/*Compreção*/
 
 .item {
-    font-size: 8px;
+    font-size: 23px;
+    top: 40px;
+    bottom: 40px;
 }
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(67, 67, 67, 0.9);
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+}
+
+.menu-barras {
+    display: initial;
+}
+
+.zip {
+    color: gray;
+    font-size: 30px;
+    
+}
+
+/*Fim da Compreção*/
 
 #nossaComida, #nossaEquipe {
     margin: 0 0 25px;
